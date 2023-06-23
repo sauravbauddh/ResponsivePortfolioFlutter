@@ -13,11 +13,14 @@ class _EducationState extends State<Education> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 800,
       margin: const EdgeInsets.only(top: 20),
       padding: const EdgeInsets.all(30),
       width: context.screenWidth < 900
           ? context.screenWidth * 0.9
-          : context.screenWidth * 0.5,
+          : context.screenWidth < 1600
+          ? context.screenWidth * 0.5
+          : context.screenWidth * 0.4,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
@@ -31,6 +34,9 @@ class _EducationState extends State<Education> {
               fontSize: 24,
               fontWeight: FontWeight.w600,
             ),
+          ),
+          SizedBox(
+            height: 12,
           ),
           Timeline.tileBuilder(
             shrinkWrap: true,
@@ -60,7 +66,7 @@ class _EducationState extends State<Education> {
                           ),
                         ),
                         Text(
-                          "TSS International School",
+                          "TSS International School adsfadsfdszgxdhffxghcfghfdghfdfsdfssdddddddddddddddddas",
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.grey.shade700,
